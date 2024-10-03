@@ -1,10 +1,10 @@
-class QuoteController {
+export class QuoteController {
   constructor(getRandomQuote) {
-    this.getRandomQuote = getRandomQuote;
+    this.getRandomQuoteUseCase = getRandomQuote;
   }
 
   getRandomQuote() {
-    const quote = this.getRandomQuote.execute();
+    const quote = this.getRandomQuoteUseCase.execute();
     return `"${quote.text}" - ${quote.character} (${quote.anime})`;
   }
 }

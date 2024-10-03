@@ -1,4 +1,4 @@
-class GetRandomQuote {
+export class GetRandomQuote {
   constructor(quoteRepository) {
     this.quoteRepository = quoteRepository;
   }

@@ -1,4 +1,7 @@
-class InMemoryQuoteRepository extends QuoteRepository {
+import { QuoteRepository } from '../../domain/repositories/QuoteRepository.js';
+import { Quote } from '../../domain/entities/Quote.js';
+
+export class InMemoryQuoteRepository extends QuoteRepository {
   constructor() {
     super();
     this.quotes = [
